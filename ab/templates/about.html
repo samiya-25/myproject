@@ -1,8 +1,8 @@
-{% include" header.html" %}
+{% include "header.html" %}
 
 <div>
-    <h1 style="color: aqua;">About Us</h1>
-    <p style="color: aliceblue; background-color: darkgray;">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Aliquid doloribus exercitationem delectus labore
-        debitis error aspernatur porro rem nam modi ab nesciunt cumque, hic suscipit corporis tempora ipsa distinctio
-        totam.</p>
+    {% for i in data2 %}
+    <h1 style="color: aqua;">{{ data2.title }}</h1>
+    <p style="color: aliceblue; background-color: darkgray;">{{ data2.about }}</p>
+    {% endfor%}
 </div>

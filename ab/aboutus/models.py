@@ -5,4 +5,4 @@ from tinymce.models import HTMLField
 
 class Aboutus(models.Model):
     title=models.CharField(max_length=100)
-    about=HTMLField
+    about=HTMLField()
